@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  dns_record_app:
+    image: dns_record:269a0ad
+    environment:
+      - CLOUDFLARE_API_TOKEN=${CLOUDFLARE_API_TOKEN}
+      - CLOUDFLARE_ZONE_ID=${CLOUDFLARE_ZONE_ID}
+      - CLOUDFLARE_DNS_RECORD_ID=${CLOUDFLARE_DNS_RECORD_ID}
